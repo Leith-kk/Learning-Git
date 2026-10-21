@@ -2,8 +2,11 @@ print("hello world!")
 
 print("This is the python program from windows terminal.")
 
-a = 1
+print(f"The hex number of 1024 is {1024:08x}")
 
-b = 3
-print("sum:")
-print("{}+{}={}".format(a, b, a + b))
+a = [0] * 8
+b = []
+for _ in range(8):
+    b.append(a)
+
+print(type(b), b)
